@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Promise</title>
+</head>
+<body>
+  <h1>ES6 - Promise</h1>
+
+  <div class="content"></div>
+</body>
+
+<script>
+  const posts = fetch('https://willianjusten.com.br/search.json');
+
+  posts
+    .then(data => data.json())
+    .then(data => {
+      const items = data.map(post => {
+        let item = document.createElement('li');
+        item.textContent = post.title;
+        return item;
+      })
+
+      return(items);
+    })
+    .then(items => {
+      const content = document.querySelector('.content');
+      const list = document.createElement('ul');
+
+      items.map(item => {
+        list.appendChild(item);
+      })
+
+      content.appendChild(list);
+    })
+    .catch(err => console.error(err));
+</script>
+</html>

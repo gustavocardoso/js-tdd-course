@@ -1,13 +1,39 @@
-const a = 3;
+const cities = ['São Paulo', 'Bagé', 'Bauru', 'Porto Alegre'];
 
-const b = 'teste';
+const love = cities.map((city) => {
+  return `I love ${city}`;
+});
 
-function sum() {
-  return a + b;
+const loveSingle = cities.map(city => `I love ${city}`);
+
+console.log(love);
+
+console.log('');
+
+console.log(loveSingle);
+
+console.log('');
+
+const loveChain = cities
+  .filter(city => city === 'São Paulo')
+  .map(city => `But, I really love ${city}`);
+
+console.log(loveChain);
+
+const firstName = 'Gustavo';
+const lastName = 'Cardoso';
+const age = 40;
+
+const person = {
+  firstName,
+  lastName,
+  age,
+
+  hello() {
+    console.log('Hello');
+  }
 }
 
-sum();
+console.log(person);
 
-if (a === true) {
-  sum();
-}
+person.hello();
