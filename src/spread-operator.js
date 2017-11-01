@@ -15,8 +15,7 @@ const fullstack = [...front, 'RxJS', ...back];
 
 console.log(fullstack);
 
-
-console.log(['Wind', 'Rain', 'Fire'].join(' + '))
+console.log(['Wind', 'Rain', 'Fire'].join(' + '));
 
 function makeSandwich(bread, cheese, sauce) {
   console.log(`Your sandwich with ${bread} bread, ${cheese} cheese and ${sauce} is done!`);

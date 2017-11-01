@@ -3,10 +3,9 @@ const text = 'Gustavo';
 console.log(Array.from(text));
 
 
-const bucket = Array.of('Gustavo', 12, 4, {name: 'Olívia'});
+const bucket = Array.of('Gustavo', 12, 4, { name: 'Olívia' });
 
 console.log(bucket);
-
 
 const data = [
   {
@@ -18,7 +17,7 @@ const data = [
     name: 'Rosele Martins',
     age: 40,
     city: 'Bagé',
-  }
+  },
 ];
 
 const sample = [4, -5, 0, -1];

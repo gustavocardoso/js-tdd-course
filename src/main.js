@@ -1,8 +1,6 @@
 const cities = ['São Paulo', 'Bagé', 'Bauru', 'Porto Alegre'];
 
-const love = cities.map((city) => {
-  return `I love ${city}`;
-});
+const love = cities.map(city => `I love ${city}`);
 
 const loveSingle = cities.map(city => `I love ${city}`);
 
@@ -31,8 +29,8 @@ const person = {
 
   hello() {
     console.log('Hello');
-  }
-}
+  },
+};
 
 console.log(person);
 
